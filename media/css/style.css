@@ -29,10 +29,10 @@ ul li{
 	padding: 0;
 }
 
-form{margin-left: 100px;
+/* form{margin-left: 100px;
 	width: 300px;
 	height: 600px;
-}
+} */
 
 .registr a {margin-right: 100px;
 	width: 200px;
@@ -146,7 +146,13 @@ text-align:center;
 	color:#fff;background-color:#449d44;border-color:#398439;
 }
 
+.col-md-6 {
+	border: 1px solid blue;
+}
+
 .col-md-6 div{
+	text-align: center;
+	font-size: 22px;
 	/* color: black; */
 }
 
@@ -154,6 +160,7 @@ text-align:center;
 	font-size: 16px;
 	color: black;
 	text-align: justify;
+
 }
 
 .col-md-6 ul {
@@ -162,6 +169,10 @@ text-align:center;
 	list-style-position: inside;
 }
 
+.table{
+margin-top:30px;
+border-color: black;
+}
 
 
 #footer{
