@@ -46,3 +46,6 @@ return true;
 	return $query;
 	}
 }
+
+<?php require_once('templates/bottom.php');
+?>

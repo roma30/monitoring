@@ -1,25 +1,16 @@
 #header {
 height:150px;
-<<<<<<< HEAD
 background: #D0C295;
 }
 .logo{
 float:left;
 margin-left:80px;
 margin-top: 30px;
-=======
-background: url(../img/koga16.jpg);
-}
-.logo{
-float:left;
-padding:10px;
->>>>>>> bd5b264d1efd8ae291280e47ef416041f829e529
 height:100px;
 width:100px;}
 
 #header h1{
 float:right;
-<<<<<<< HEAD
 margin-top:50px;
 margin-right: 100px;
 font-size: 44px;
@@ -53,25 +44,6 @@ ul li{
 	width: 200px;
 	float: right;
 	
-=======
-padding:10px;
-margin:0;}
-
-body{
-background: url(../img/koga11.jpg);
-padding:0;
-margin:0;}
-
-.registr{
-width: 200px;
-float:right;
-margin-right:100px;
-}
-
-.avtor{
-width: 200px;
-margin-left:100px;
->>>>>>> bd5b264d1efd8ae291280e47ef416041f829e529
 }
 
 .vih{
@@ -86,29 +58,17 @@ float:right;
 margin-right:100px;
 }
 
-<<<<<<< HEAD
 .new{
 width: 200px;
 float:right;
 margin-right:100px;
 }
 
-=======
-<<<<<<< HEAD
-=======
-.new{
-width: 200px;
-margin-left: 360px;
-}
-
->>>>>>> bd5b264d1efd8ae291280e47ef416041f829e529
->>>>>>> 4d866e3013f605ade40a136b964915fc8539c4d7
 .textt{
 color:blue;
 text-align:center;
 }
 
-<<<<<<< HEAD
 .menu{
 	height: 33px;
 	background: #333;
@@ -221,57 +181,14 @@ border-color: black;
 }
 
 
-=======
-.table{
-margin-top:30px;
-}
-
-.topmenu{
-display:-moz-box;
-display:flex;
-padding:10px;
-wider:100%;
-margin:0 auto;
-}
-.topmenu a {
--moz-box-flex:1;
-flex:1;
-display:block;
-font-size:20px;
-color:green;
-text-decoration:none;
-text-align:center;
-padding:10px 0;
-background:#A3F5D9;
-border-right:1px solid yellow;
-}
-
-
-.topmenu a:hover{
-background:#A12691;
-color:#95A4E4;
-}
-
-.content h2{
-color:#CDD57C;
-text-align:center;
-}
-
->>>>>>> bd5b264d1efd8ae291280e47ef416041f829e529
 #footer{
 padding: 40px auto;
 background:#F2F11C;
 text-align:center;
 }
-<<<<<<< HEAD
 
 #footer p{
 	text-align: center;
 }
 
 
-=======
-#footer a{
-color:#EA8176;
-}
->>>>>>> bd5b264d1efd8ae291280e47ef416041f829e529
