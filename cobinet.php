@@ -24,15 +24,15 @@ $query="SELECT * FROM categoria";
 $database->query($query);
 $cats=$database-> resultset();
 
-/*$database = new Database();
-$query2="SELECT * FROM categotia_cen";
+$database = new Database();
+$query="SELECT * FROM categotia_cen";
 $database->query($query);
 $catss=$database-> resultset();
 
 $database = new Database();
-$query3="SELECT * FROM categoria_godovs";
+$query="SELECT * FROM categoria_godovs";
 $database->query($query);
-$catsss=$database-> resultset();*/
+$catsss=$database-> resultset();
 
   if($_POST){
   /* echo '<pre>';
@@ -63,7 +63,7 @@ $catsss=$database-> resultset();*/
 $query = 'INSERT INTO statias (cat_id,cat_cen_id,cat_god_id,user_id,name_categoria, editor1,file_foto,data_reg) VALUES ("'.$_POST['cat_id'].'","'.$_POST['cat_cen_id'].'","'.$_POST['cat_god_id'].'","'.$_SESSION['id'].'","'.$_POST['name_categoria'].'","'.$_POST['editor1'].'","'.trim($real_name).'",NOW())';
  /* $query = 'INSERT INTO statias (cat_id,user_id,name_categoria, editor1,file_foto,data_reg) VALUES ("'.$_POST['cat_id'].'","'.$_SESSION['id'].'","'.$_POST['name_categoria'].'","'.$_POST['editor1'].'","'.trim($real_name).'",NOW())';*/
   $database->query($query);
-/*
+ /*
     $database->bind(':cat_id', $_POST['cat_id']);
     $database->bind(':name-categoria', $_POST['name-categoria']);
     $database->bind(':editor1', $_POST['editor1']);
@@ -100,7 +100,7 @@ foreach($cats as $key){
 ?>
 </select>
   </div>
-<!--   <div class="form-group">
+<div class="form-group">
     <label for="categotia_cen">Выберите цену</label>
 <select name='cat_cen_id'>
 <?php
@@ -127,7 +127,7 @@ foreach($catsss as $key){
 }
 ?>
 </select>
-</div> -->
+</div>
   <div class="form-group">
     <label for="name-categoria">название</label>
     <input type="name_categoria" class="form-control" id="name_categoria" placeholder="name_categoria" name="name_categoria">
