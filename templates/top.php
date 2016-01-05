@@ -28,7 +28,7 @@
 				<ul>
 					<li><a href="#">Закупочные цены</a>
 						<ul>
-						<li><a href="#">2013 год</a></li>
+						<li><a href="rbz13.php">2013 год</a></li>
 						<li><a href="#">2014 год</a></li>
 						<li><a href="#">2015 год</a></li>	
 						</ul>
@@ -186,6 +186,7 @@ if ($_SESSION['id']){
 <div class="vih"><a href="logout.php" class="btn btn-success btn-block">выход</a></div>
 <div class="cob"><a href="cobinet.php" class="btn btn-success btn-block">кабинет</a></div>
 <div class="new"> <a href="new_news.php" class="btn btn-success btn-block">мои статьи</a></div>
+<div class="parse"> <a href="parse_csv.php" class="btn btn-success btn-block">прикрепление файлов</a></div>
 <?php
 } else{
 ?>

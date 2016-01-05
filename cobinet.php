@@ -34,6 +34,11 @@ $query="SELECT * FROM categoria_godovs";
 $database->query($query);
 $catsss=$database-> resultset();
 
+$database = new Database();
+$query="SELECT * FROM categoria_mesicev";
+$database->query($query);
+$catssss=$database-> resultset();
+
   if($_POST){
   /* echo '<pre>';
   print_r ($_FILES);
@@ -60,7 +65,7 @@ $catsss=$database-> resultset();
     }
 
     $database = new Database();
-$query = 'INSERT INTO statias (cat_id,cat_cen_id,cat_god_id,user_id,name_categoria, editor1,file_foto,data_reg) VALUES ("'.$_POST['cat_id'].'","'.$_POST['cat_cen_id'].'","'.$_POST['cat_god_id'].'","'.$_SESSION['id'].'","'.$_POST['name_categoria'].'","'.$_POST['editor1'].'","'.trim($real_name).'",NOW())';
+$query = 'INSERT INTO statias (cat_id,cat_cen_id,cat_god_id,cat_mes_id,user_id,name_categoria, editor1,file_foto,data_reg) VALUES ("'.$_POST['cat_id'].'","'.$_POST['cat_cen_id'].'","'.$_POST['cat_god_id'].'","'.$_POST['cat_mes_id'].'","'.$_SESSION['id'].'","'.$_POST['name_categoria'].'","'.$_POST['editor1'].'","'.trim($real_name).'",NOW())';
  /* $query = 'INSERT INTO statias (cat_id,user_id,name_categoria, editor1,file_foto,data_reg) VALUES ("'.$_POST['cat_id'].'","'.$_SESSION['id'].'","'.$_POST['name_categoria'].'","'.$_POST['editor1'].'","'.trim($real_name).'",NOW())';*/
   $database->query($query);
  /*
@@ -119,6 +124,20 @@ foreach($catss as $key){
 <select name='cat_god_id'>
 <?php
 foreach($catsss as $key){
+?>
+<option value ='<?=$key['id']?>' >
+<?=$key['name']?>
+</option>
+<?php
+}
+?>
+</select>
+</div>
+<div class="form-group">
+    <label for="categoria_mesicev">Выберите месяц</label>
+<select name='cat_mes_id'>
+<?php
+foreach($catssss as $key){
 ?>
 <option value ='<?=$key['id']?>' >
 <?=$key['name']?>
