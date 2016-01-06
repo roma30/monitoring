@@ -65,7 +65,7 @@ $catssss=$database-> resultset();
     }
 
     $database = new Database();
-$query = 'INSERT INTO statias (cat_id,cat_cen_id,cat_god_id,cat_mes_id,user_id,name_categoria, editor1,file_foto,data_reg) VALUES ("'.$_POST['cat_id'].'","'.$_POST['cat_cen_id'].'","'.$_POST['cat_god_id'].'","'.$_POST['cat_mes_id'].'","'.$_SESSION['id'].'","'.$_POST['name_categoria'].'","'.$_POST['editor1'].'","'.trim($real_name).'",NOW())';
+$query = "INSERT INTO statias (cat_id,cat_cen_id,cat_god_id,cat_mes_id,user_id,name_categoria, editor1,file_foto,data_reg) VALUES ('".$_POST['cat_id']."','".$_POST['cat_cen_id']."','".$_POST['cat_god_id']."','".$_POST['cat_mes_id']."','".$_SESSION['id']."','".$_POST['name_categoria']."','".$_POST['editor1']."','".trim($real_name)."',NOW())";
  /* $query = 'INSERT INTO statias (cat_id,user_id,name_categoria, editor1,file_foto,data_reg) VALUES ("'.$_POST['cat_id'].'","'.$_SESSION['id'].'","'.$_POST['name_categoria'].'","'.$_POST['editor1'].'","'.trim($real_name).'",NOW())';*/
   $database->query($query);
  /*
