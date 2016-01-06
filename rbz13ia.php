@@ -15,40 +15,29 @@ $database = new Database();
 $query="SELECT * FROM prices";
 $database->query($query);
 $al = $database->resultset();
+echo "<table class='brd' width='100%'> 
+<tr>
+	<th>Название</th>
+	<th>Описание</th>
+	<th>Стоимость</th>
+	<th>Категория</th></tr>";
 foreach($al as $two){
 	 /*echo "<div class='art'>".$two['name']."<br/>";
 	  echo "<div class='art'>".$two['vv0']."<br/>";
 	   echo "<div class='art'>".$two['vv1']."<br/>";
 	    echo "<div class='art'>".$two['vv2']."<br/>";
 	     echo "<div class='art'>".$two['vv3']."<br/>";*/
-echo "<table class='brd' width='100%'> 
-<tr>
-	<th>Название</th>
-	<th>Описание</th>
-	<th>Стоимость</th>
-	<th>Категория</th>
-	<th>Название</th>
-	<th>Описание</th>
-	<th>Стоимость</th>
-	<th>Категория</th>
-	<th>Название</th>
-	<th>Описание</th>
-	<th>Стоимость</th>
-	<th>Категория</th>
-	<th>Название</th>
-	<th>Описание</th>
-	<th>Стоимость</th>
-	<th>Категория</th>
-</tr> 
-<tr>
-	<td>тоже будет текст</td>
+echo "
+ 
+<tr> 
 	<td>".$two['vv0']."</td>
 	<td>".$two['vv1']."</td>
 	<td>".$two['vv2']."</td>
 	<td>".$two['vv3']."</td>
 </tr> 
-</table>";
-	};
+";
+	}
+	echo "</table>";
 ?>
 
 
